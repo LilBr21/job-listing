@@ -11,12 +11,12 @@ const JobItem = (props) => {
             <div className="container">
             <div>
                 <div className="first-row">
-                    <p>{props.company}</p>
+                    <p className="company">{props.company}</p>
                     {props.new === true ? <p>NEW!</p> : null}
                     {props.featured === true ? <p>FEATURED</p> : null}
                 </div>
                 <h2>{props.position}</h2>
-                <div>
+                <div className="bottom-row">
                     {props.postedAt}
                     {props.contract}
                     {props.location}

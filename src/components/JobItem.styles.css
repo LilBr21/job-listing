@@ -25,11 +25,20 @@
     flex-direction: row;
 }
 
+.company {
+    color: hsl(180, 29%, 50%);
+    font-weight: 700;
+}
+
 h2 {
     margin: 0;
 }
 
 p {
-    padding: 0.5rem;
+    padding: 0.2rem;
 }
 
+.bottom-row {
+    color: hsl(180, 8%, 52%);
+    padding: 0.5rem;
+}
