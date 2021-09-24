@@ -1,6 +1,8 @@
 import jobsData from '../data.json';
 import JobItem from './JobItem';
 
+import './Jobs.styles.css';
+
 const Jobs = () => {
     const jobsArr = [];
     for (const id in jobsData) {
@@ -8,6 +10,7 @@ const Jobs = () => {
             id: id,
             company: jobsData[id].company, 
             logo: jobsData[id].logo,
+            new: jobsData[id].new,
             featured: jobsData[id].featured,
             position: jobsData[id].position,
             role: jobsData[id].role,
@@ -20,13 +23,14 @@ const Jobs = () => {
         })
     }
     return (
-        <div>
+        <div  className="jobs-list">
        {jobsArr.map((job) => (
            <JobItem 
             key={job.id}
             id={job.id}
             company={job.company}
             logo={job.logo}
+            new={job.new}
             featured={job.featured}
             position={job.position}
             role={job.role}
