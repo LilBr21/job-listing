@@ -3,7 +3,6 @@
 import useFilter from './useFilter';
 
 const Filter = ({
-    searchFiltered, 
     filterHTML, 
     filterCSS, 
     filterJS, 
@@ -27,7 +26,6 @@ const Filter = ({
                 <button onClick={filterCSS}>CSS</button>
                 <button onClick={filterPython}>Python</button>
                 <button onClick={filterRuby}>Ruby</button>
-                <button onClick={searchFiltered}>Search</button>
             </div>}
         </div>
     )

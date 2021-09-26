@@ -40,7 +40,7 @@ const Jobs = () => {
                 filteredArr.push(job);
             }
         }
-        console.log(filteredArr)
+        setFinalArr(filteredArr);
     }
 
     const filterCSS = () => {
@@ -50,6 +50,7 @@ const Jobs = () => {
                 filteredArr.push(job)
             }
         }
+        setFinalArr(filteredArr);
     }
 
     const filterJS = () => {
@@ -59,6 +60,7 @@ const Jobs = () => {
                 filteredArr.push(job)
             }
         }
+        setFinalArr(filteredArr);
     }
 
     const filterPython = () => {
@@ -68,6 +70,7 @@ const Jobs = () => {
                 filteredArr.push(job);
             }
         }
+        setFinalArr(filteredArr);
     }
 
     const filterRuby = () => {
@@ -77,18 +80,12 @@ const Jobs = () => {
                 filteredArr.push(job);
             }
         }
-    }
-
-    const searchFiltered = () => {
         setFinalArr(filteredArr);
-        
     }
-    
 
     return (
         <div  className="jobs-list">
         <Filter 
-            searchFiltered = {searchFiltered}
             filterHTML = {filterHTML}
             filterCSS = {filterCSS}
             filterJS = {filterJS}
