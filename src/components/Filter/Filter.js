@@ -2,6 +2,8 @@
 
 import useFilter from './useFilter';
 
+import './Filter.styles.css';
+
 const Filter = ({
     filterHTML, 
     filterCSS, 
@@ -18,14 +20,16 @@ const Filter = ({
 
     return (
         <div>
-            <button onClick={showListHandler}>Add filter</button>
+            <div className="filter-btn-container">
+                <button className="filter-btn" onClick={showListHandler}>Add filter</button>
+            </div>
             {isShown &&
             <div>
-                <button onClick={filterHTML}>HTML</button>
-                <button onClick={filterJS}>JavaScript</button>
-                <button onClick={filterCSS}>CSS</button>
-                <button onClick={filterPython}>Python</button>
-                <button onClick={filterRuby}>Ruby</button>
+                <button className="specific-filter" onClick={filterHTML}>HTML</button>
+                <button className="specific-filter" onClick={filterJS}>JavaScript</button>
+                <button className="specific-filter" onClick={filterCSS}>CSS</button>
+                <button className="specific-filter" onClick={filterPython}>Python</button>
+                <button className="specific-filter" onClick={filterRuby}>Ruby</button>
             </div>}
         </div>
     )

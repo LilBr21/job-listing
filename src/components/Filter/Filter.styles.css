@@ -1,0 +1,29 @@
+.filter-btn, .specific-filter {
+    background-color: hsl(180, 29%, 50%);
+    color: #fff;
+    border-style: none;
+    border-radius: 10px;
+    height: 2.5rem;
+    width: 5rem;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.filter-btn:hover, .specific-filter:hover {
+    background-color: hsl(180, 8%, 52%);
+}
+
+.filter-btn-container {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
+
+.filter-btn {
+    margin-top: 1rem;
+}
+
+.specific-filter {
+    margin: 1rem;
+}
