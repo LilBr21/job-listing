@@ -1,9 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Spartan&display=swap');
+
 .job {
     display: flex;
     flex-direction: row;
     margin: 2rem;
     background: #fff;
     width: 85%;
+    border-radius: 5px;
+    box-shadow: 2px 17px 15px -3px rgba(0,0,0,0.16);
+    font-family: Spartan, sans-serif;
 }
 
 .logo {
@@ -28,17 +33,57 @@
 .company {
     color: hsl(180, 29%, 50%);
     font-weight: 700;
+    font-size: 18px;
 }
 
 h2 {
     margin: 0;
+    font-size: 20px;
 }
 
 p {
     padding: 0.2rem;
 }
 
+.new-offer, .featured-offer {
+    border-radius: 10px;
+    padding: 0.45rem;
+    font-weight: 500;
+    margin-left: 15px;
+    color: #fff;
+}
+
+.new-offer {
+    background-color: hsl(180, 29%, 50%);
+}
+
+.featured-offer {
+    background-color: hsl(180, 14%, 20%);
+}
+
+.languages {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.language {
+    color: hsl(180, 29%, 50%);
+    background-color: hsl(180, 31%, 95%);
+    margin: 0.45rem;
+    padding: 0.4rem;
+    border-radius: 10px;
+    font-weight: 700;
+}
+
 .bottom-row {
     color: hsl(180, 8%, 52%);
     padding: 0.5rem;
+    display: flex;
+    flex-direction: row;
+}
+
+.bottom-info {
+    margin: 0.5rem 0.75rem 0.5rem 0;
 }

@@ -19,7 +19,7 @@ const Jobs = () => {
             id: id,
             company: jobsData[id].company, 
             logo: jobsData[id].logo,
-            new: jobsData[id].new,
+            newad: jobsData[id].new,
             featured: jobsData[id].featured,
             position: jobsData[id].position,
             role: jobsData[id].role,

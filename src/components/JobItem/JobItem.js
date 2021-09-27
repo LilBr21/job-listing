@@ -2,7 +2,9 @@
 import './JobItem.styles.css';
 
 const JobItem = ({
-    logo,company, 
+    id,
+    logo,
+    company, 
     newad, 
     featured, 
     position, 
@@ -20,18 +22,22 @@ const JobItem = ({
             <div>
                 <div className="first-row">
                     <p className="company">{company}</p>
-                    {newad === true ? <p>NEW!</p> : null}
-                    {featured === true ? <p>FEATURED</p> : null}
+                    {newad && <p className="new-offer">NEW!</p>}
+                    {featured && <p className="featured-offer">FEATURED</p>}
                 </div>
                 <h2>{position}</h2>
                 <div className="bottom-row">
-                    {postedAt}
-                    {contract}
-                    {location}
+                    <div className="bottom-info">{postedAt}</div>
+                    <div className="bottom-info">{contract}</div>
+                    <div className="bottom-info">{location}</div>
                 </div>
             </div>
             <div className="languages">
-                <p>{languages}</p>
+                {languages.map((language) => {
+                    return (
+                    <p key={id + Math.random()} className="language">{language}</p>
+                    )
+                })}
             </div>
             </div>
         </div>
