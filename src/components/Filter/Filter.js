@@ -9,7 +9,8 @@ const Filter = ({
     filterCSS, 
     filterJS, 
     filterPython,
-    filterRuby
+    filterRuby,
+    clearFilters
 }) => {
   
 
@@ -30,6 +31,7 @@ const Filter = ({
                 <button className="specific-filter" onClick={filterCSS}>CSS</button>
                 <button className="specific-filter" onClick={filterPython}>Python</button>
                 <button className="specific-filter" onClick={filterRuby}>Ruby</button>
+                <button className="specific-filter" onClick={clearFilters}>Clear filter</button>
             </div>}
         </div>
     )

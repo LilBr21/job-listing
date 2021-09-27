@@ -83,6 +83,10 @@ const Jobs = () => {
         setFinalArr(filteredArr);
     }
 
+    const clearFilters = () => {
+        setFinalArr(jobsArr);
+    }
+
     return (
         <div  className="jobs-list">
         <Filter 
@@ -91,6 +95,7 @@ const Jobs = () => {
             filterJS = {filterJS}
             filterPython = {filterPython}
             filterRuby = {filterRuby}
+            clearFilters = {clearFilters}
         />
        { 
            finalArr.map((job) => 
