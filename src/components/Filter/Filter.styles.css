@@ -27,3 +27,10 @@
 .specific-filter {
     margin: 1rem;
 }
+
+.specific-filters {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}

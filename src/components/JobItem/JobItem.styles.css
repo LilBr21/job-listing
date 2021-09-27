@@ -87,3 +87,43 @@ p {
 .bottom-info {
     margin: 0.5rem 0.75rem 0.5rem 0;
 }
+
+@media (max-width: 850px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .languages {
+       justify-content: start;
+    }
+
+    .language {
+        margin: 0.45rem 0.45rem 0.45rem 0;
+    }
+}
+
+@media (max-width: 500px) {
+    .first-row {
+        margin-top: 2rem;
+    }
+
+    .logo-pic {
+        position: absolute;
+        margin: 0 0 13rem 1.5rem;
+        height: 50px;
+        width: 50px;
+    }
+
+    .logo {
+        padding: 0.25rem;
+        position: relative;
+    }
+
+    .company {
+        font-size: 15px;
+    }
+
+    .new-offer, .featured-offer {
+        font-size: 12px;
+    }
+}

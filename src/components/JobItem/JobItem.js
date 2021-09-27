@@ -16,7 +16,7 @@ const JobItem = ({
     return (
         <div className="job">
             <div className="logo">
-                <img src={logo} alt="logo"></img>
+                <img className="logo-pic" src={logo} alt="logo"></img>
             </div>
             <div className="container">
             <div>

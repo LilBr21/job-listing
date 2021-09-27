@@ -25,7 +25,7 @@ const Filter = ({
                 <button className="filter-btn" onClick={showListHandler}>Add filter</button>
             </div>
             {isShown &&
-            <div>
+            <div className="specific-filters">
                 <button className="specific-filter" onClick={filterHTML}>HTML</button>
                 <button className="specific-filter" onClick={filterJS}>JavaScript</button>
                 <button className="specific-filter" onClick={filterCSS}>CSS</button>
