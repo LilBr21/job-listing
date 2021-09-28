@@ -1,38 +1,37 @@
-@import url('https://fonts.googleapis.com/css2?family=Spartan&display=swap');
+@import '../../Variables/variables.scss';
+
+.job, .container, .first-row, .bottom-row {
+    @include rowStyle
+}
+
+.logo, .languages {
+    @include displayStyle(row);
+}
+
+.company, .language {
+    font-weight: $boldFont;
+}
 
 .job {
-    display: flex;
-    flex-direction: row;
     margin: 2rem;
     background: #fff;
     width: 85%;
     border-radius: 5px;
     box-shadow: 2px 17px 15px -3px rgba(0,0,0,0.16);
-    font-family: Spartan, sans-serif;
+    font-family: $mainFont;
 }
 
 .logo {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     padding: 1.5rem;
 }
 
 .container {
-    display: flex;
-    flex-direction: row;
     width: 100%;
     justify-content: space-between;
 }
 
-.first-row {
-    display: flex;
-    flex-direction: row;
-}
-
 .company {
-    color: hsl(180, 29%, 50%);
-    font-weight: 700;
+    color: $mainColor;
     font-size: 18px;
 }
 
@@ -54,34 +53,24 @@ p {
 }
 
 .new-offer {
-    background-color: hsl(180, 29%, 50%);
+    background-color: $mainColor;
 }
 
 .featured-offer {
-    background-color: hsl(180, 14%, 20%);
-}
-
-.languages {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
+    background-color: $darkColor;
 }
 
 .language {
-    color: hsl(180, 29%, 50%);
+    color: $mainColor;
     background-color: hsl(180, 31%, 95%);
     margin: 0.45rem;
     padding: 0.4rem;
     border-radius: 10px;
-    font-weight: 700;
 }
 
 .bottom-row {
     color: hsl(180, 8%, 52%);
     padding: 0.5rem;
-    display: flex;
-    flex-direction: row;
 }
 
 .bottom-info {

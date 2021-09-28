@@ -1,8 +1,7 @@
+@import "../../Variables/variables.scss";
+
 .jobs-list {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    @include displayStyle(column);
     width: 100%;
 }
 

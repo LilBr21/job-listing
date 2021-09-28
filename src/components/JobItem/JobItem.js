@@ -1,5 +1,5 @@
 
-import './JobItem.styles.css';
+import './JobItemstyles.css';
 
 const JobItem = ({
     id,

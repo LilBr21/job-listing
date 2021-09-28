@@ -2,7 +2,7 @@
 
 import useFilter from './useFilter';
 
-import './Filter.styles.css';
+import './Filterstyles.css';
 
 const Filter = ({
     filterHTML, 

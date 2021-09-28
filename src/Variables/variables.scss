@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Spartan&display=swap');
+
+$mainColor: hsl(180, 29%, 50%);
+$darkColor: hsl(180, 14%, 20%);
+
+$mainFont: Spartan, sans-serif;
+$boldFont: 700;
+
+@mixin displayStyle ($direction){
+    display: flex;
+    flex-direction: $direction;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin rowStyle {
+    display: flex;
+    flex-direction: row;
+}

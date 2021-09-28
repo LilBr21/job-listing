@@ -1,23 +1,22 @@
+@import '../../Variables/variables.scss';
+
 .filter-btn, .specific-filter {
-    background-color: hsl(180, 29%, 50%);
+    background-color: $mainColor;
     color: #fff;
     border-style: none;
     border-radius: 10px;
     height: 2.5rem;
     width: 5rem;
-    font-weight: 700;
+    font-weight: $boldFont;
     cursor: pointer;
 }
 
 .filter-btn:hover, .specific-filter:hover {
-    background-color: hsl(180, 14%, 20%);
+    background-color: $darkColor;
 }
 
 .filter-btn-container {
-   display: flex;
-   flex-direction: column;
-   justify-content: center;
-   align-items: center;
+   @include displayStyle(column);
 }
 
 .filter-btn {
@@ -29,8 +28,6 @@
 }
 
 .specific-filters {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include displayStyle(row);
     flex-wrap: wrap;
 }

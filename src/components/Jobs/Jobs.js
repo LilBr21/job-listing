@@ -5,7 +5,8 @@ import jobsData from '../../data.json';
 import JobItem from '../JobItem/JobItem';
 import Filter from '../Filter/Filter';
 
-import './Jobs.styles.css';
+//import './Jobs.styles.css';
+import './Jobsstyles.css';
 
 
 const Jobs = () => {
