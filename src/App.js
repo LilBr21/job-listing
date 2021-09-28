@@ -1,4 +1,4 @@
-import './App.css';
+import './Appstyles.css';
 
 import Jobs from './components/Jobs/Jobs';
 import Header from './components/Header/Header';
